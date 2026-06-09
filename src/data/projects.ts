@@ -24,7 +24,7 @@ export const projects = [
         description:
             "Sitio corporativo para comunicar servicios, equipo y propuesta profesional.",
         tech: ["React", "Vite"],
-        link: "#",
+        link: "",
     },
     {
         name: "CleenGo",
@@ -51,7 +51,7 @@ export const projects = [
         description:
             "Espacio digital creado para comunicar clases, filosofía del proyecto y conectar con nuevos alumnos.",
         tech: ["React", "Vite"],
-        link: "#",
+        link: "",
     },
 
     {

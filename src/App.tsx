@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { Routes, Route, useLocation } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
@@ -9,7 +10,30 @@ import About from "./components/About"
 import FAQ from "./components/FAQ"
 import Footer from "./components/Footer"
 
-function App() {
+import LaunchOrbit from "./pages/services/LaunchOrbit"
+import BrandOrbit from "./pages/services/BrandOrbit"
+import CustomOrbit from "./pages/services/CustomOrbit"
+import DesarrolloMedida from "./pages/services/DesarrolloMedida"
+import ServiciosAdicionales from "./pages/services/ServiciosAdicionales"
+import GestionContenido from "./pages/services/GestionContenido"
+
+function Home() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Services />
+      <Projects />
+      <Process />
+      <About />
+      <FAQ />
+      <Footer />
+    </>
+  )
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
 
   useEffect(() => {
     window.scrollTo({
@@ -17,58 +41,77 @@ function App() {
       left: 0,
       behavior: "instant",
     })
-  }, [])
+  }, [pathname])
 
+  return null
+}
 
+function App() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#0F0F14] text-[#F5F1EA]">
+      <ScrollToTop />
 
       <div className="pointer-events-none fixed inset-0 -z-10">
-
         <div
           className="
-          absolute
-          left-[-10%]
-          top-[-10%]
-          h-[420px]
-          w-[420px]
-          rounded-full
-          bg-[#BFA2FF]/20
-          blur-[120px]"
+            absolute
+            left-[-10%]
+            top-[-10%]
+            h-[420px]
+            w-[420px]
+            rounded-full
+            bg-[#BFA2FF]/20
+            blur-[120px]
+          "
         />
 
         <div
           className="
-          absolute
-          bottom-[10%]
-          right-[-10%]
-          h-[360px]
-          w-[360px]
-          rounded-full
-          bg-[#D8B4FE]/10
-          blur-[110px]"
+            absolute
+            bottom-[10%]
+            right-[-10%]
+            h-[360px]
+            w-[360px]
+            rounded-full
+            bg-[#D8B4FE]/10
+            blur-[110px]
+          "
         />
-
       </div>
 
+      <Routes>
+        <Route path="/" element={<Home />} />
 
-      <Navbar />
+        <Route
+          path="/servicios/launch-orbit"
+          element={<LaunchOrbit />}
+        />
 
-      <Hero />
+        <Route
+          path="/servicios/brand-orbit"
+          element={<BrandOrbit />}
+        />
 
-      <Services />
+        <Route
+          path="/servicios/custom-orbit"
+          element={<CustomOrbit />}
+        />
 
-      <Projects />
+        <Route
+          path="/servicios/desarrollo-a-medida"
+          element={<DesarrolloMedida />}
+        />
 
-      <Process />
+        <Route
+          path="/servicios/adicionales"
+          element={<ServiciosAdicionales />}
+        />
 
-      <About />
-
-      <FAQ />
-
-      <Footer />
-
-
+        <Route
+          path="/servicios/gestion-de-contenido"
+          element={<GestionContenido />}
+        />
+      </Routes>
     </main>
   )
 }

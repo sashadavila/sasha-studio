@@ -1,0 +1,840 @@
+/* ==============================
+   GESTIÓN DE CONTENIDO
+================================= */
+
+.social-page {
+  min-height: 100vh;
+  background: #0f0f14;
+  color: #f5f1ea;
+}
+
+.social-container,
+.social-hero,
+.social-cta-section {
+  width: min(100% - 3rem, 1280px);
+  margin-inline: auto;
+}
+
+/* ==============================
+   HERO
+================================= */
+
+.social-hero {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.social-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-back-link:hover {
+  color: #bfa2ff;
+}
+
+.social-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  align-items: center;
+  gap: 3rem;
+}
+
+.social-hero-content {
+  min-width: 0;
+}
+
+.social-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(191, 162, 255, 0.3);
+  border-radius: 999px;
+  background: rgba(191, 162, 255, 0.1);
+  color: #bfa2ff;
+  font-size: 0.875rem;
+}
+
+.social-title {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.social-description {
+  max-width: 720px;
+  margin-top: 1.25rem;
+  color: #a1a1aa;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.social-price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-price-label {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.social-price {
+  margin: 0.5rem 0 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.social-currency {
+  margin-top: 0.25rem;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+}
+
+.social-price-detail {
+  margin-bottom: 0.25rem;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-price-detail p {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+}
+
+.social-price-detail span {
+  display: block;
+  margin-top: 0.25rem;
+  color: #bfa2ff;
+  font-size: 0.875rem;
+}
+
+.social-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+}
+
+/* ==============================
+   BOTONES
+================================= */
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.social-button:hover {
+  transform: translateY(-2px);
+}
+
+.social-button-primary {
+  border: 1px solid #bfa2ff;
+  background: #bfa2ff;
+  color: #0f0f14;
+}
+
+.social-button-primary:hover {
+  background: #d1bbff;
+  border-color: #d1bbff;
+}
+
+.social-button-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f5f1ea;
+}
+
+.social-button-secondary:hover {
+  border-color: rgba(191, 162, 255, 0.5);
+  color: #bfa2ff;
+}
+
+/* ==============================
+   RESUMEN HERO
+================================= */
+
+.social-summary {
+  padding: 1.75rem;
+  border: 1px solid rgba(191, 162, 255, 0.2);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 50px rgba(191, 162, 255, 0.08);
+}
+
+.social-eyebrow {
+  margin: 0;
+  color: #bfa2ff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.social-summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.75rem;
+}
+
+.social-summary-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-summary-item > svg {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  color: #bfa2ff;
+}
+
+.social-summary-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.social-summary-item p {
+  margin: 0.4rem 0 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* ==============================
+   SECCIONES
+================================= */
+
+.social-section {
+  padding: 5rem 0;
+}
+
+.social-section-alt {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.social-heading {
+  max-width: 850px;
+}
+
+.social-heading h2 {
+  margin: 0.75rem 0 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.social-heading-description {
+  margin-top: 1.25rem;
+  color: #a1a1aa;
+  line-height: 1.75;
+}
+
+/* ==============================
+   PLANES
+================================= */
+
+.social-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.social-plan-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.social-plan-card.featured {
+  border-color: rgba(191, 162, 255, 0.45);
+  background: rgba(191, 162, 255, 0.06);
+  box-shadow: 0 0 40px rgba(191, 162, 255, 0.08);
+}
+
+.social-featured-label {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  background: #bfa2ff;
+  color: #0f0f14;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transform: translate(-50%, -50%);
+}
+
+.social-plan-header > p {
+  margin: 0;
+  color: #bfa2ff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.social-plan-header h3 {
+  margin: 0.75rem 0 0;
+  font-size: 1.6rem;
+}
+
+.social-plan-header strong {
+  display: block;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.social-plan-header > span {
+  color: #71717a;
+  font-size: 0.8rem;
+}
+
+.social-plan-description {
+  margin: 1.25rem 0 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
+.social-plan-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  background: rgba(191, 162, 255, 0.07);
+  color: #bfa2ff;
+}
+
+.social-plan-summary p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.social-plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.social-plan-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.social-plan-list-item svg {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  color: #bfa2ff;
+}
+
+.social-plan-list-item p {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.social-plan-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1.75rem;
+  color: #bfa2ff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* ==============================
+   SEMANA
+================================= */
+
+.social-week-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.social-week-card {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.social-week-card span {
+  color: #bfa2ff;
+  font-size: 0.8rem;
+}
+
+.social-week-card h3 {
+  margin: 0.7rem 0 0;
+  font-size: 1.05rem;
+}
+
+.social-week-note {
+  margin: 1.5rem 0 0;
+  color: #71717a;
+  font-size: 0.875rem;
+}
+
+/* ==============================
+   TRABAJO / CLIENTE
+================================= */
+
+.social-two-columns,
+.social-client-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.social-common-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.social-small-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.social-small-card svg {
+  flex-shrink: 0;
+  color: #bfa2ff;
+}
+
+.social-small-card p {
+  margin: 0;
+  color: #d4d4d8;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.social-small-card.muted {
+  align-items: flex-start;
+}
+
+.social-small-card.muted svg {
+  margin-top: 0.15rem;
+  color: #71717a;
+}
+
+.social-small-card.muted p {
+  color: #a1a1aa;
+}
+
+/* ==============================
+   COMBINACIONES
+================================= */
+
+.social-combos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+
+.social-combo-card {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.social-combo-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.social-combo-header svg {
+  flex-shrink: 0;
+  color: #bfa2ff;
+}
+
+.social-combo-header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.social-combo-price {
+  margin: 0.6rem 0 0;
+  color: #bfa2ff;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.social-combo-regular {
+  margin: 0.3rem 0 0;
+  color: #71717a;
+  font-size: 0.75rem;
+  text-decoration: line-through;
+}
+
+.social-combo-description {
+  margin: 1rem 0 0;
+  color: #a1a1aa;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.social-combo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+}
+
+.social-combo-list-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-combo-list-item svg {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  color: #bfa2ff;
+}
+
+.social-combo-list-item p {
+  margin: 0;
+  color: #d4d4d8;
+  font-size: 0.82rem;
+}
+
+.social-combo-note {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(191, 162, 255, 0.2);
+  border-radius: 1rem;
+  background: rgba(191, 162, 255, 0.05);
+}
+
+.social-combo-note strong {
+  color: #bfa2ff;
+}
+
+.social-combo-note p {
+  margin: 0.5rem 0 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* ==============================
+   NO INCLUYE
+================================= */
+
+.social-scope-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 3rem;
+}
+
+.social-not-included-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+/* ==============================
+   RESPONSABILIDAD CLIENTE
+================================= */
+
+.social-client-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.social-client-item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.social-client-item svg {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  color: #bfa2ff;
+}
+
+.social-client-item p {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* ==============================
+   MATERIAL
+================================= */
+
+.social-material-note {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 1px solid rgba(191, 162, 255, 0.2);
+  border-radius: 1.5rem;
+  background: rgba(191, 162, 255, 0.05);
+}
+
+.social-material-note > svg {
+  flex-shrink: 0;
+  color: #bfa2ff;
+}
+
+.social-material-note h2 {
+  margin: 0.75rem 0 0;
+  font-size: 1.8rem;
+}
+
+.social-material-note p:not(.social-eyebrow) {
+  margin: 1rem 0 0;
+  color: #a1a1aa;
+  line-height: 1.7;
+}
+
+.social-material-note strong {
+  display: block;
+  margin-top: 1rem;
+  color: #bfa2ff;
+  font-size: 0.875rem;
+}
+
+/* ==============================
+   ACLARACIÓN
+================================= */
+
+.social-note-section {
+  width: min(100% - 3rem, 900px);
+  margin-inline: auto;
+  padding: 5rem 0;
+}
+
+.social-note {
+  padding: 2.5rem;
+  border: 1px solid rgba(191, 162, 255, 0.2);
+  border-radius: 1.5rem;
+  background: rgba(191, 162, 255, 0.05);
+  text-align: center;
+}
+
+.social-note > svg {
+  color: #bfa2ff;
+}
+
+.social-note > p:last-child {
+  max-width: 700px;
+  margin: 1.25rem auto 0;
+  color: #d4d4d8;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* ==============================
+   CTA
+================================= */
+
+.social-cta-section {
+  padding-bottom: 6rem;
+}
+
+.social-cta {
+  padding: 4rem 3rem;
+  border: 1px solid rgba(191, 162, 255, 0.25);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.social-cta h2 {
+  max-width: 850px;
+  margin: 1rem auto 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+}
+
+.social-cta > p:not(.social-eyebrow) {
+  max-width: 650px;
+  margin: 1.25rem auto 0;
+  color: #a1a1aa;
+  line-height: 1.75;
+}
+
+.social-cta .social-button {
+  margin-top: 2rem;
+}
+
+/* ==============================
+   TABLET
+================================= */
+
+@media (max-width: 960px) {
+  .social-hero-grid,
+  .social-two-columns,
+  .social-client-grid,
+  .social-scope-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-plans-grid,
+  .social-combos-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .social-week-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .social-summary {
+    max-width: 650px;
+  }
+}
+
+/* ==============================
+   MOBILE
+================================= */
+
+@media (max-width: 640px) {
+  .social-container,
+  .social-hero,
+  .social-cta-section {
+    width: min(100% - 2rem, 1280px);
+  }
+
+  .social-hero {
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .social-section {
+    padding: 4rem 0;
+  }
+
+  .social-title {
+    font-size: 2.6rem;
+  }
+
+  .social-description {
+    font-size: 1rem;
+  }
+
+  .social-price {
+    font-size: 2.1rem;
+  }
+
+  .social-actions {
+    flex-direction: column;
+  }
+
+  .social-button {
+    width: 100%;
+  }
+
+  .social-plans-grid,
+  .social-week-grid,
+  .social-common-grid,
+  .social-combos-grid,
+  .social-not-included-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-summary,
+  .social-plan-card,
+  .social-combo-card {
+    padding: 1.4rem;
+  }
+
+  .social-heading h2 {
+    font-size: 2rem;
+  }
+
+  .social-material-note {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .social-material-note h2 {
+    font-size: 1.5rem;
+  }
+
+  .social-note-section {
+    width: min(100% - 2rem, 900px);
+    padding: 4rem 0;
+  }
+
+  .social-note {
+    padding: 1.75rem;
+  }
+
+  .social-note > p:last-child {
+    font-size: 1rem;
+  }
+
+  .social-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .social-cta h2 {
+    font-size: 2rem;
+  }
+}

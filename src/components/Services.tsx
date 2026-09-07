@@ -1,4 +1,6 @@
 import { ArrowRight } from "lucide-react"
+import { Link } from "react-router-dom"
+
 import { services } from "../data/services"
 
 function Services() {
@@ -36,7 +38,9 @@ function Services() {
                         <div>
                             <div className="mb-5 flex items-start justify-between gap-6">
                                 <div>
-                                    <h3 className="text-2xl font-semibold">{service.title}</h3>
+                                    <h3 className="text-2xl font-semibold">
+                                        {service.title}
+                                    </h3>
 
                                     <p className="mt-3 text-sm leading-6 text-[#BFA2FF]">
                                         {service.subtitle}
@@ -67,24 +71,30 @@ function Services() {
                             </p>
 
                             <div className="mt-2 flex items-end gap-3">
-                                <p className="text-2xl font-semibold">{service.promoPrice}</p>
-
-                                <p className="pb-0.5 text-sm text-[#A1A1AA] line-through">
-                                    {service.realPrice}
+                                <p className="text-2xl font-semibold">
+                                    {service.promoPrice}
                                 </p>
+
+                                {service.realPrice && (
+                                    <p className="pb-0.5 text-sm text-[#A1A1AA] line-through">
+                                        {service.realPrice}
+                                    </p>
+                                )}
                             </div>
 
-                            <p className="mt-1 text-xs text-[#BFA2FF]">
-                                Precio lanzamiento
-                            </p>
+                            {service.realPrice && (
+                                <p className="mt-1 text-xs text-[#BFA2FF]">
+                                    Precio lanzamiento
+                                </p>
+                            )}
 
-                            <a
-                                href="#contact"
+                            <Link
+                                to={service.detailLink}
                                 className="mt-5 flex w-full items-center justify-center gap-3 rounded-full border border-[#BFA2FF]/40 px-5 py-3 text-sm font-medium text-[#BFA2FF] transition hover:bg-[#BFA2FF] hover:text-[#0F0F14]"
                             >
                                 Conocer todo lo que incluye
                                 <ArrowRight size={17} />
-                            </a>
+                            </Link>
                         </div>
                     </article>
                 ))}

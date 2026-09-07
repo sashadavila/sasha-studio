@@ -1,0 +1,664 @@
+/* ==============================
+   LAUNCH ORBIT
+================================= */
+
+.launch-page {
+    min-height: 100vh;
+    background: #0f0f14;
+    color: #f5f1ea;
+}
+
+.launch-container,
+.launch-hero,
+.launch-cta-section {
+    width: min(100% - 3rem, 1280px);
+    margin-inline: auto;
+}
+
+/* ==============================
+   HERO
+================================= */
+
+.launch-hero {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.launch-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 0.875rem;
+    color: #a1a1aa;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.launch-back-link:hover {
+    color: #bfa2ff;
+}
+
+.launch-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+    align-items: center;
+    gap: 3rem;
+}
+
+.launch-hero-content {
+    min-width: 0;
+}
+
+.launch-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(191, 162, 255, 0.3);
+    border-radius: 999px;
+    background: rgba(191, 162, 255, 0.1);
+    color: #bfa2ff;
+    font-size: 0.875rem;
+}
+
+.launch-title {
+    max-width: 900px;
+    margin: 0;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.launch-description {
+    max-width: 680px;
+    margin-top: 1.25rem;
+    color: #a1a1aa;
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+.launch-price-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.launch-price-label {
+    margin: 0;
+    color: #a1a1aa;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+.launch-price {
+    margin: 0.5rem 0 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.launch-currency {
+    margin-top: 0.25rem;
+    color: #a1a1aa;
+    font-size: 0.875rem;
+}
+
+.launch-domain {
+    margin-bottom: 0.25rem;
+    padding-left: 1rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.launch-domain p {
+    margin: 0;
+    color: #a1a1aa;
+    font-size: 0.875rem;
+}
+
+.launch-domain span {
+    display: block;
+    margin-top: 0.25rem;
+    color: #bfa2ff;
+    font-size: 0.875rem;
+}
+
+.launch-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
+}
+
+.launch-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.launch-button:hover {
+    transform: translateY(-2px);
+}
+
+.launch-button-primary {
+    border: 1px solid #bfa2ff;
+    background: #bfa2ff;
+    color: #0f0f14;
+}
+
+.launch-button-primary:hover {
+    background: #d1bbff;
+    border-color: #d1bbff;
+}
+
+.launch-button-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #f5f1ea;
+}
+
+.launch-button-secondary:hover {
+    border-color: rgba(191, 162, 255, 0.5);
+    color: #bfa2ff;
+}
+
+/* ==============================
+   RESUMEN HERO
+================================= */
+
+.launch-summary {
+    padding: 1.75rem;
+    border: 1px solid rgba(191, 162, 255, 0.2);
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 50px rgba(191, 162, 255, 0.08);
+}
+
+.launch-eyebrow {
+    margin: 0;
+    color: #bfa2ff;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.launch-summary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.75rem;
+}
+
+.launch-summary-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.launch-summary-item>svg {
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+    color: #bfa2ff;
+}
+
+.launch-summary-item h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.launch-summary-item p {
+    margin: 0.4rem 0 0;
+    color: #a1a1aa;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* ==============================
+   SECCIONES GENERALES
+================================= */
+
+.launch-section {
+    padding: 5rem 0;
+}
+
+.launch-section-alt {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.launch-heading {
+    max-width: 800px;
+}
+
+.launch-heading h2 {
+    margin: 0.75rem 0 0;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.launch-heading-description {
+    margin-top: 1.25rem;
+    color: #a1a1aa;
+    line-height: 1.75;
+}
+
+/* ==============================
+   QUÉ INCLUYE
+================================= */
+
+.launch-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.launch-feature-card {
+    display: flex;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.launch-feature-card svg {
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+    color: #bfa2ff;
+}
+
+.launch-feature-card p {
+    margin: 0;
+    color: #d4d4d8;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* ==============================
+   ESTRUCTURA
+================================= */
+
+.launch-structure-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-top: 3rem;
+}
+
+.launch-structure-card {
+    padding: 1.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.launch-structure-card span {
+    color: #bfa2ff;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.launch-structure-card h3 {
+    margin: 0.75rem 0 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.launch-structure-card p {
+    margin: 0.75rem 0 0;
+    color: #a1a1aa;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.launch-navbar-footer {
+    margin-top: 1.25rem;
+    padding: 1.75rem;
+    border: 1px dashed rgba(191, 162, 255, 0.3);
+    border-radius: 1.5rem;
+    background: rgba(191, 162, 255, 0.05);
+}
+
+.launch-navbar-footer h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.launch-navbar-footer p {
+    margin: 0.5rem 0 0;
+    color: #a1a1aa;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* ==============================
+   IDEAL PARA
+================================= */
+
+.launch-two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 3rem;
+}
+
+.launch-ideal-grid,
+.launch-not-included-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.launch-small-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.launch-small-card svg {
+    flex-shrink: 0;
+    color: #bfa2ff;
+}
+
+.launch-small-card p {
+    margin: 0;
+    color: #d4d4d8;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.launch-small-card.muted {
+    align-items: flex-start;
+}
+
+.launch-small-card.muted svg {
+    margin-top: 0.15rem;
+    color: #71717a;
+}
+
+.launch-small-card.muted p {
+    color: #a1a1aa;
+}
+
+/* ==============================
+   ALCANCE
+================================= */
+
+.launch-scope-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 3rem;
+}
+
+.launch-additional-services {
+    margin-top: 2rem;
+    padding: 1.25rem;
+    border: 1px solid rgba(191, 162, 255, 0.2);
+    border-radius: 1rem;
+    background: rgba(191, 162, 255, 0.05);
+}
+
+.launch-additional-services p {
+    margin: 0;
+    color: #d4d4d8;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.launch-additional-services a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    color: #bfa2ff;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* ==============================
+   MATERIAL + CONDICIONES
+================================= */
+
+.launch-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.launch-info-card {
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.launch-info-card h2 {
+    margin: 0.75rem 0 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.launch-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.75rem;
+}
+
+.launch-list-item {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.launch-list-item svg {
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+    color: #bfa2ff;
+}
+
+.launch-list-item p {
+    margin: 0;
+    color: #a1a1aa;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.launch-important-text {
+    margin: 1.75rem 0 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #bfa2ff;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* ==============================
+   ACLARACIÓN
+================================= */
+
+.launch-note-section {
+    width: min(100% - 3rem, 900px);
+    margin-inline: auto;
+    padding: 5rem 0;
+}
+
+.launch-note {
+    padding: 2.5rem;
+    border: 1px solid rgba(191, 162, 255, 0.2);
+    border-radius: 1.5rem;
+    background: rgba(191, 162, 255, 0.05);
+    text-align: center;
+}
+
+.launch-note>p:last-child {
+    max-width: 680px;
+    margin: 1.25rem auto 0;
+    color: #d4d4d8;
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+/* ==============================
+   CTA FINAL
+================================= */
+
+.launch-cta-section {
+    padding-bottom: 6rem;
+}
+
+.launch-cta {
+    padding: 4rem 3rem;
+    border: 1px solid rgba(191, 162, 255, 0.25);
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.launch-cta h2 {
+    max-width: 800px;
+    margin: 1rem auto 0;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.launch-cta>p:not(.launch-eyebrow) {
+    max-width: 600px;
+    margin: 1.25rem auto 0;
+    color: #a1a1aa;
+    line-height: 1.75;
+}
+
+.launch-cta .launch-button {
+    margin-top: 2rem;
+}
+
+/* ==============================
+   TABLET
+================================= */
+
+@media (max-width: 960px) {
+
+    .launch-hero-grid,
+    .launch-two-columns,
+    .launch-scope-grid,
+    .launch-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .launch-features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .launch-summary {
+        max-width: 650px;
+    }
+}
+
+/* ==============================
+   MOBILE
+================================= */
+
+@media (max-width: 640px) {
+
+    .launch-container,
+    .launch-hero,
+    .launch-cta-section {
+        width: min(100% - 2rem, 1280px);
+    }
+
+    .launch-hero {
+        padding-top: 2.5rem;
+        padding-bottom: 4rem;
+    }
+
+    .launch-section {
+        padding: 4rem 0;
+    }
+
+    .launch-badge {
+        align-items: flex-start;
+        font-size: 0.8rem;
+    }
+
+    .launch-title {
+        font-size: 2.6rem;
+    }
+
+    .launch-description {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .launch-price {
+        font-size: 2.1rem;
+    }
+
+    .launch-actions {
+        flex-direction: column;
+    }
+
+    .launch-button {
+        width: 100%;
+    }
+
+    .launch-features-grid,
+    .launch-structure-grid,
+    .launch-ideal-grid,
+    .launch-not-included-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .launch-summary,
+    .launch-info-card,
+    .launch-structure-card {
+        padding: 1.4rem;
+    }
+
+    .launch-heading h2 {
+        font-size: 2rem;
+    }
+
+    .launch-note-section {
+        width: min(100% - 2rem, 900px);
+        padding: 4rem 0;
+    }
+
+    .launch-note {
+        padding: 1.75rem;
+    }
+
+    .launch-note>p:last-child {
+        font-size: 1rem;
+    }
+
+    .launch-cta {
+        padding: 3rem 1.5rem;
+    }
+
+    .launch-cta h2 {
+        font-size: 2rem;
+    }
+}

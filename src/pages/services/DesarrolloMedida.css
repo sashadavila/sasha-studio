@@ -1,0 +1,651 @@
+/* ==============================
+   DESARROLLO A MEDIDA
+================================= */
+
+.development-page {
+  min-height: 100vh;
+  background: #0f0f14;
+  color: #f5f1ea;
+}
+
+.development-container,
+.development-hero,
+.development-cta-section {
+  width: min(100% - 3rem, 1280px);
+  margin-inline: auto;
+}
+
+/* ==============================
+   HERO
+================================= */
+
+.development-hero {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.development-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.development-back-link:hover {
+  color: #bfa2ff;
+}
+
+.development-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  align-items: center;
+  gap: 3rem;
+}
+
+.development-hero-content {
+  min-width: 0;
+}
+
+.development-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(191, 162, 255, 0.3);
+  border-radius: 999px;
+  background: rgba(191, 162, 255, 0.1);
+  color: #bfa2ff;
+  font-size: 0.875rem;
+}
+
+.development-title {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.development-description,
+.development-description-secondary {
+  max-width: 760px;
+  color: #a1a1aa;
+  line-height: 1.8;
+}
+
+.development-description {
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.development-description-secondary {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.development-price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.development-price-label {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.development-price {
+  margin: 0.5rem 0 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.development-price-detail {
+  margin-bottom: 0.25rem;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.development-price-detail p {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+}
+
+.development-price-detail span {
+  display: block;
+  margin-top: 0.25rem;
+  color: #bfa2ff;
+  font-size: 0.875rem;
+}
+
+.development-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+}
+
+/* ==============================
+   BOTONES
+================================= */
+
+.development-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.development-button:hover {
+  transform: translateY(-2px);
+}
+
+.development-button-primary {
+  border: 1px solid #bfa2ff;
+  background: #bfa2ff;
+  color: #0f0f14;
+}
+
+.development-button-primary:hover {
+  border-color: #d1bbff;
+  background: #d1bbff;
+}
+
+.development-button-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f5f1ea;
+}
+
+.development-button-secondary:hover {
+  border-color: rgba(191, 162, 255, 0.5);
+  color: #bfa2ff;
+}
+
+/* ==============================
+   HERO RESUMEN
+================================= */
+
+.development-summary {
+  padding: 1.75rem;
+  border: 1px solid rgba(191, 162, 255, 0.2);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 50px rgba(191, 162, 255, 0.08);
+}
+
+.development-eyebrow {
+  margin: 0;
+  color: #bfa2ff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.development-summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.75rem;
+}
+
+.development-summary-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.development-summary-item > svg {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  color: #bfa2ff;
+}
+
+.development-summary-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.development-summary-item p {
+  margin: 0.4rem 0 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* ==============================
+   SECCIONES GENERALES
+================================= */
+
+.development-section {
+  padding: 5rem 0;
+}
+
+.development-section-alt {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.development-heading {
+  max-width: 850px;
+}
+
+.development-heading h2 {
+  margin: 0.75rem 0 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.development-heading-description {
+  margin-top: 1.25rem;
+  color: #a1a1aa;
+  line-height: 1.75;
+}
+
+/* ==============================
+   TIPOS DE DESARROLLO
+================================= */
+
+.development-types-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.development-type-card {
+  padding: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.development-type-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.development-type-icon {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(191, 162, 255, 0.25);
+  border-radius: 0.9rem;
+  background: rgba(191, 162, 255, 0.1);
+  color: #bfa2ff;
+}
+
+.development-type-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.development-type-header p {
+  margin: 0.5rem 0 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.development-type-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.development-type-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.development-type-list-item svg {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  color: #bfa2ff;
+}
+
+.development-type-list-item p {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+/* ==============================
+   APLICACIONES WEB
+================================= */
+
+.development-app-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.development-project-examples {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.development-small-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.development-small-card svg {
+  flex-shrink: 0;
+  color: #bfa2ff;
+}
+
+.development-small-card p {
+  margin: 0;
+  color: #d4d4d8;
+  font-size: 0.875rem;
+}
+
+/* ==============================
+   INTEGRACIONES
+================================= */
+
+.development-integrations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.development-integration-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.development-integration-card svg {
+  flex-shrink: 0;
+  color: #bfa2ff;
+}
+
+.development-integration-card p {
+  margin: 0;
+  color: #d4d4d8;
+  font-size: 0.875rem;
+}
+
+/* ==============================
+   PROCESO
+================================= */
+
+.development-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.development-process-card {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.development-process-card span {
+  color: #bfa2ff;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.development-process-card h3 {
+  margin: 0.75rem 0 0;
+  font-size: 1.05rem;
+}
+
+.development-process-card p {
+  margin: 0.75rem 0 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* ==============================
+   DIFERENCIA
+================================= */
+
+.development-difference {
+  max-width: 900px;
+}
+
+.development-difference h2 {
+  margin: 0.75rem 0 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+}
+
+.development-difference > p:not(.development-eyebrow) {
+  margin-top: 1.25rem;
+  color: #a1a1aa;
+  line-height: 1.8;
+}
+
+.development-difference strong {
+  display: block;
+  margin-top: 1.5rem;
+  color: #bfa2ff;
+  font-size: 1.05rem;
+}
+
+/* ==============================
+   PLANES ALTERNATIVOS
+================================= */
+
+.development-alternative {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.development-alternative h2 {
+  margin: 0.75rem 0 0;
+  font-size: 1.8rem;
+}
+
+.development-alternative p:not(.development-eyebrow) {
+  max-width: 700px;
+  margin: 1rem 0 0;
+  color: #a1a1aa;
+  line-height: 1.7;
+}
+
+.development-alternative .development-button {
+  flex-shrink: 0;
+}
+
+/* ==============================
+   CTA FINAL
+================================= */
+
+.development-cta-section {
+  padding-bottom: 6rem;
+}
+
+.development-cta {
+  padding: 4rem 3rem;
+  border: 1px solid rgba(191, 162, 255, 0.25);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.development-cta h2 {
+  max-width: 850px;
+  margin: 1rem auto 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+}
+
+.development-cta > p:not(.development-eyebrow) {
+  max-width: 650px;
+  margin: 1.25rem auto 0;
+  color: #a1a1aa;
+  line-height: 1.75;
+}
+
+.development-cta .development-button {
+  margin-top: 2rem;
+}
+
+/* ==============================
+   TABLET
+================================= */
+
+@media (max-width: 960px) {
+  .development-hero-grid,
+  .development-app-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .development-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .development-integrations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .development-summary {
+    max-width: 650px;
+  }
+
+  .development-alternative {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* ==============================
+   MOBILE
+================================= */
+
+@media (max-width: 640px) {
+  .development-container,
+  .development-hero,
+  .development-cta-section {
+    width: min(100% - 2rem, 1280px);
+  }
+
+  .development-hero {
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .development-section {
+    padding: 4rem 0;
+  }
+
+  .development-badge {
+    align-items: flex-start;
+    font-size: 0.8rem;
+  }
+
+  .development-title {
+    font-size: 2.6rem;
+  }
+
+  .development-description {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .development-price {
+    font-size: 2rem;
+  }
+
+  .development-actions {
+    flex-direction: column;
+  }
+
+  .development-button {
+    width: 100%;
+  }
+
+  .development-types-grid,
+  .development-type-list,
+  .development-project-examples,
+  .development-integrations-grid,
+  .development-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .development-summary,
+  .development-type-card {
+    padding: 1.4rem;
+  }
+
+  .development-heading h2 {
+    font-size: 2rem;
+  }
+
+  .development-type-header {
+    flex-direction: column;
+  }
+
+  .development-alternative {
+    padding: 1.5rem;
+  }
+
+  .development-alternative h2 {
+    font-size: 1.5rem;
+  }
+
+  .development-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .development-cta h2 {
+    font-size: 2rem;
+  }
+}

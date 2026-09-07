@@ -1,0 +1,675 @@
+/* ==============================
+   SERVICIOS ADICIONALES
+================================= */
+
+.extras-page {
+  min-height: 100vh;
+  background: #0f0f14;
+  color: #f5f1ea;
+}
+
+.extras-container,
+.extras-hero,
+.extras-cta-section {
+  width: min(100% - 3rem, 1280px);
+  margin-inline: auto;
+}
+
+/* ==============================
+   HERO
+================================= */
+
+.extras-hero {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.extras-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.extras-back-link:hover {
+  color: #bfa2ff;
+}
+
+.extras-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  align-items: center;
+  gap: 3rem;
+}
+
+.extras-hero-content {
+  min-width: 0;
+}
+
+.extras-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(191, 162, 255, 0.3);
+  border-radius: 999px;
+  background: rgba(191, 162, 255, 0.1);
+  color: #bfa2ff;
+  font-size: 0.875rem;
+}
+
+.extras-title {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.extras-description {
+  max-width: 720px;
+  margin-top: 1.25rem;
+  color: #a1a1aa;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.extras-price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.extras-price-label {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.extras-price {
+  margin: 0.5rem 0 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.extras-currency {
+  margin-top: 0.25rem;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+}
+
+.extras-price-detail {
+  margin-bottom: 0.25rem;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.extras-price-detail p {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+}
+
+.extras-price-detail span {
+  display: block;
+  margin-top: 0.25rem;
+  color: #bfa2ff;
+  font-size: 0.875rem;
+}
+
+.extras-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+}
+
+/* ==============================
+   BOTONES
+================================= */
+
+.extras-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.extras-button:hover {
+  transform: translateY(-2px);
+}
+
+.extras-button-primary {
+  border: 1px solid #bfa2ff;
+  background: #bfa2ff;
+  color: #0f0f14;
+}
+
+.extras-button-primary:hover {
+  background: #d1bbff;
+  border-color: #d1bbff;
+}
+
+.extras-button-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f5f1ea;
+}
+
+.extras-button-secondary:hover {
+  border-color: rgba(191, 162, 255, 0.5);
+  color: #bfa2ff;
+}
+
+/* ==============================
+   HERO RESUMEN
+================================= */
+
+.extras-summary {
+  padding: 1.75rem;
+  border: 1px solid rgba(191, 162, 255, 0.2);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 50px rgba(191, 162, 255, 0.08);
+}
+
+.extras-eyebrow {
+  margin: 0;
+  color: #bfa2ff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.extras-summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.75rem;
+}
+
+.extras-summary-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.extras-summary-item > svg {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  color: #bfa2ff;
+}
+
+.extras-summary-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.extras-summary-item p {
+  margin: 0.4rem 0 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* ==============================
+   SECCIONES GENERALES
+================================= */
+
+.extras-section {
+  padding: 5rem 0;
+}
+
+.extras-section-alt {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.extras-heading {
+  max-width: 850px;
+}
+
+.extras-heading h2 {
+  margin: 0.75rem 0 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.extras-heading-description {
+  margin-top: 1.25rem;
+  color: #a1a1aa;
+  line-height: 1.75;
+}
+
+/* ==============================
+   SERVICIOS
+================================= */
+
+.extras-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.extras-service-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.extras-service-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.extras-service-icon {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(191, 162, 255, 0.25);
+  border-radius: 0.9rem;
+  background: rgba(191, 162, 255, 0.1);
+  color: #bfa2ff;
+}
+
+.extras-service-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.extras-service-price {
+  margin: 0.35rem 0 0;
+  color: #bfa2ff;
+  font-weight: 600;
+}
+
+.extras-service-description {
+  margin: 1.5rem 0 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.extras-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.extras-service-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.extras-service-list-item svg {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  color: #bfa2ff;
+}
+
+.extras-service-list-item p {
+  margin: 0;
+  color: #d4d4d8;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.extras-service-note {
+  margin: auto 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #71717a;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+/* ==============================
+   LOGO VS IDENTIDAD
+================================= */
+
+.extras-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.extras-comparison-card {
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.extras-comparison-card.featured {
+  border-color: rgba(191, 162, 255, 0.35);
+  background: rgba(191, 162, 255, 0.07);
+}
+
+.extras-comparison-card > svg {
+  color: #bfa2ff;
+}
+
+.extras-comparison-card h3 {
+  margin: 1rem 0 0;
+  font-size: 1.3rem;
+}
+
+.extras-comparison-card p {
+  margin: 1rem 0 0;
+  color: #a1a1aa;
+  line-height: 1.7;
+}
+
+.extras-comparison-card strong {
+  display: block;
+  margin-top: 1.5rem;
+  color: #bfa2ff;
+  font-size: 1.4rem;
+}
+
+/* ==============================
+   COMBINACIONES
+================================= */
+
+.extras-combinations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+
+.extras-combination-card {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.extras-combination-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.extras-combination-top svg {
+  flex-shrink: 0;
+  color: #bfa2ff;
+}
+
+.extras-combination-top h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.extras-combination-price {
+  margin: 0.5rem 0 0;
+  color: #bfa2ff;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.extras-combination-description {
+  margin: 1rem 0 0;
+  color: #a1a1aa;
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
+.extras-combination-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.extras-combination-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.extras-combination-list-item svg {
+  flex-shrink: 0;
+  color: #bfa2ff;
+}
+
+.extras-combination-list-item p {
+  margin: 0;
+  color: #d4d4d8;
+  font-size: 0.82rem;
+}
+
+/* ==============================
+   ACLARACIONES
+================================= */
+
+.extras-notes {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.extras-notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.extras-note-item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.extras-note-item svg {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  color: #bfa2ff;
+}
+
+.extras-note-item p {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* ==============================
+   PLANES WEB
+================================= */
+
+.extras-web-plans {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.extras-web-plans h2 {
+  margin: 0.75rem 0 0;
+  font-size: 1.8rem;
+}
+
+.extras-web-plans p:not(.extras-eyebrow) {
+  max-width: 700px;
+  margin: 1rem 0 0;
+  color: #a1a1aa;
+  line-height: 1.7;
+}
+
+.extras-web-plans .extras-button {
+  flex-shrink: 0;
+}
+
+/* ==============================
+   CTA
+================================= */
+
+.extras-cta-section {
+  padding: 5rem 0 6rem;
+}
+
+.extras-cta {
+  padding: 4rem 3rem;
+  border: 1px solid rgba(191, 162, 255, 0.25);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.extras-cta h2 {
+  max-width: 850px;
+  margin: 1rem auto 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+}
+
+.extras-cta > p:not(.extras-eyebrow) {
+  max-width: 650px;
+  margin: 1.25rem auto 0;
+  color: #a1a1aa;
+  line-height: 1.75;
+}
+
+.extras-cta .extras-button {
+  margin-top: 2rem;
+}
+
+/* ==============================
+   TABLET
+================================= */
+
+@media (max-width: 960px) {
+  .extras-hero-grid,
+  .extras-notes {
+    grid-template-columns: 1fr;
+  }
+
+  .extras-services-grid,
+  .extras-combinations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .extras-summary {
+    max-width: 650px;
+  }
+
+  .extras-web-plans {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ==============================
+   MOBILE
+================================= */
+
+@media (max-width: 640px) {
+  .extras-container,
+  .extras-hero,
+  .extras-cta-section {
+    width: min(100% - 2rem, 1280px);
+  }
+
+  .extras-hero {
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .extras-section {
+    padding: 4rem 0;
+  }
+
+  .extras-title {
+    font-size: 2.6rem;
+  }
+
+  .extras-description {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .extras-price {
+    font-size: 2.1rem;
+  }
+
+  .extras-actions {
+    flex-direction: column;
+  }
+
+  .extras-button {
+    width: 100%;
+  }
+
+  .extras-services-grid,
+  .extras-comparison-grid,
+  .extras-combinations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .extras-summary,
+  .extras-service-card,
+  .extras-comparison-card,
+  .extras-combination-card {
+    padding: 1.4rem;
+  }
+
+  .extras-heading h2 {
+    font-size: 2rem;
+  }
+
+  .extras-web-plans {
+    padding: 1.5rem;
+  }
+
+  .extras-web-plans h2 {
+    font-size: 1.5rem;
+  }
+
+  .extras-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .extras-cta h2 {
+    font-size: 2rem;
+  }
+}
